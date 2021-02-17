@@ -7,7 +7,7 @@ Rstudio singularity environment
 ```
 $ sudo singularity build ds-work.sif Singularity.rstudio-server
 # run
-$ singularity run -B var:/var ./ds-work.sif
+$ mkdir -p var && singularity run -B var:/var ./ds-work.sif
 ```
 
 ## Build into a sandbox
