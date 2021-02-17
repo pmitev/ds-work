@@ -6,6 +6,7 @@ From: pmitev/Teoroo-singularity:rstudio-server
  
 %files
   r-reticulate.yaml /
+  conda-env.sh /etc/profile.d/
 
 
 %apprun rserver
@@ -22,6 +23,7 @@ From: pmitev/Teoroo-singularity:rstudio-server
   export XDG_RUNTIME_DIR=/tmp/.run_$(uuidgen)
   mkdir -p $XDG_RUNTIME_DIR
   export CONDA_ENVS_PATH=/opt/conda_envs
+  source /etc/profile.d/conda-env.sh
   exec rserver "${@}"
 
  
