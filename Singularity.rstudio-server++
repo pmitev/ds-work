@@ -16,6 +16,7 @@ From: pmitev/Teoroo-singularity:rstudio-server
   export PATH=/usr/lib/rstudio-server/bin:${PATH}
   export LANG=C.UTF-8 LC_ALL=C.UTF-8
   export XDG_RUNTIME_DIR=/tmp/.run_$(uuidgen)
+  export RETICULATE_MINICONDA_PATH=/opt/miniconda
  
 %runscript
   export XDG_RUNTIME_DIR=/tmp/.run_$(uuidgen)
